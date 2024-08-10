@@ -1,3 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+html{
+    font-family: "Roboto", sans-serif;
+}
+
 h1{
     color: sienna;
+}
+
+p{
+    color: brown;
+}
+
+.par-1{
+    color: chartreuse;
+    background-color:brown;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    width: 500px;
+    /* margin: 20px 40px 15px; */
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.4s;
+}
+.par-1:hover{
+    background-color:rgb(163, 69, 69);
+    color: rgb(76, 148, 4);
+    border: 5px solid rgb(240, 146, 146);
+}
+
+.par-1 span{
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* id не используем при стилизации */
+/* #my-par-1{
+    color: blue;
+} */
+
+.images{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.user{
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+}
+
+.letters p{
+    width: 500px;
+    display: none;
+    background-color: aqua;
+}
+
+.cats{
+    display: flex;
+    gap: 150px;
+}
+
+/* стили для блока с классом cat */
+.cat{
+   border: 2px solid darkblue; 
+   /* border-bottom: 2px solid darkblue; */
+   border-radius: 20px;
+   padding: 20px;
+   margin: 30px;
+   max-width: 400px;
+   text-align: center;
+   /* margin: 0 auto; */
+   /* display: inline-block; */
+}
+
+.cat img{
+    width: 100%;/* 100% от ширины родителя */
+    border-radius: 10px;
+}
+
+/* стили для параграфов внутри блока с классом cat */
+.cat p{
+    color:rgb(4, 30, 11);
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.cat h3{
+    color:rgb(4, 30, 11);
+    font-size: 24px;
+    margin: 10px 0 30px; 
+}
+
+.cat button{
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: blue;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 2px solid rgb(110, 34, 181);
+    border-radius: 7px;
+    transition: all 0.5s;
+}
+.cat button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(98, 27, 164);
+    padding: 10px 50px;
+}
+
+.cat-1{
+    background-color: aliceblue;
+}
+
+.cat-2{
+    position: relative;
+}
+
+.cat-2 span{
+    width: 100px;
+    background-color: rgba(31, 131, 38, 0.535);
+    color: #ffffff;
+    font-weight: 700;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+
+/* сгенерированная кнопка */
+.myButton {
+	box-shadow: 0px 4px 11px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:31px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:9px 27px;
+	text-decoration:none;
+	text-shadow:0px 3px 0px #5b6178;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* абсолютное позиционирование */
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: #33bdef;
+    margin: 50px;
+    position: relative;
+}
+
+.container .child{
+    width: 100px;
+    height: 100px;
+    background-color: #2488ac;
+
+    position: absolute;
+    /* top: 600px;
+    left: 600px; */
+    /* right: -50px;
+    top: -50px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container.lorem{
+    width: 100%;
+    height: auto;
 }
