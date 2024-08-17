@@ -1,0 +1,209 @@
+.enter-form{
+    max-width: 400px;
+    background-color: rgb(240, 248, 255);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(18, 62, 100);
+}
+
+.enter-form h2{
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.enter-form .my-form{
+    border: 1px solid rgb(132, 186, 233);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.enter-form .my-form .form-input{
+    margin-bottom: 10px;
+}
+
+.enter-form .my-form .form-input label{
+    display: inline-block;
+    width: 60px;
+    /* border: 1px solid red; */
+}
+
+/* инпут */
+.enter-form .my-form .form-input input{
+    border: 1px solid rgb(178, 214, 245);
+    border-radius: 3px;
+    width: 300px;
+}
+
+.enter-form .my-form .form-input-submit{
+    max-width: 65px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+/* кнопка */
+.enter-form .my-form .form-input-submit input{
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding: 5px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+
+.enter-form .my-form .form-input-submit input:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.enter-form .my-form .form-input-submit input:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* float */
+.plain-text{
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #9fb4f2;
+}
+
+.plain-text .left{
+    float: left;
+    margin-right: 10px;
+}
+
+.plain-text .right{
+    float: right;
+}
+
+.plain-text p{
+    margin: 0;
+}
+
+/* flexbox */
+/* стили для контейнера */
+.flex-container{
+    background-color: #d9f9c5;
+    padding: 20px;
+    margin: 20px;
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    /* align-items: flex-end; */
+    /* flex-wrap: wrap; */
+}
+
+/* стили для дочерних элементов */
+.flex-container .element{
+    background-color: #8bd061;
+    padding: 20px;
+}
+
+/* стили для одного дочернего элемента */
+.flex-container .element-11{
+    align-self: center;
+}
+
+/* flex user */
+.user{
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #9ec983;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.user img{
+    width: 80%;
+}
+
+.user h2,
+.user p{
+    margin: 0;
+}
+
+/* header */
+.header{
+    max-width: 1200px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .main-nav{
+    display: flex;
+    gap: 50px;
+}
+
+.header .main-nav a{
+    color: #283966;
+    font-size: 24px;
+    text-decoration: none;/* убираем подчеркивание у ссылки */
+    padding: 2px;
+    border: 2px solid transparent;
+    transition: all 0.4s;/* плавный переход */
+}
+
+.header .main-nav a:hover{
+    color: #0a0f1e; 
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+/* grid */
+.grid-container{
+    background-color: #c5d5f9;
+    padding: 20px;
+    margin: 20px;
+    height: 600px;
+
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 200px;  */
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 150px 150px 150px;
+    gap: 20px;
+    /* column-gap: 20px;
+    row-gap: 30px; */
+    /* justify-items: center;
+    align-items: center; */
+
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-container .element{
+    background-color: #6170d0;
+    padding: 20px;
+}
+
+.grid-container .element-7{
+    background-color: #61d07d;
+    /* justify-self: center;
+    align-self: end; */
+}
+
+.grid-container .element-1{
+    background-color: #d061a0;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
