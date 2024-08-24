@@ -1,0 +1,58 @@
+/* для ширины менее 1000п */
+/*@media (max-width: 1000px){
+    .head{
+        background-color: red;
+        font-size: 32px;
+    }
+
+    .par{
+        text-align: center;
+        border: 2px solid silver;
+    }
+}*/
+
+/* для ширины экрана менее 500п */
+/*@media (max-width: 500px){
+    .head{
+        font-size: 26px;
+    }
+
+    .par{
+        display: none;
+    }
+}*/
+
+/* при ширине менее 900п перестраиваем сетку в 3 колонки */
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .element:first-child{
+        display: none;
+    }
+    .element:last-child{
+        display: none;
+    }
+} 
+
+/* при ширине менее 650п перестраиваем сетку в 2 колонки */
+@media (max-width: 650px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .element:first-child{
+        display: block;
+    }
+    .element:last-child{
+        display: block;
+    }
+}
+
+/* при ширине менее 450п перестраиваем сетку в 1 колонку */
+@media (max-width: 450px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
